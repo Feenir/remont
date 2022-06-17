@@ -1,0 +1,44 @@
+$mt: 178px
+$mb: 134px
+
+*
+  padding: 0
+  margin: 0
+html,body
+  height: 100%
+
+.wrapper
+  min-height: 100%
+  display: flex
+  flex-direction: column
+
+body
+  font-family: "Vaccine"
+  font-weight: 500
+  box-sizing: border-box
+  letter-spacing: 0.3em
+  background-color: #F5F5F5
+
+.body
+  &--color
+    background-color: white
+
+button, input, textarea
+  outline: none
+  border: none
+
+li
+  list-style: none
+
+a
+  text-decoration: none
+
+img
+  min-width: 100%
+  height: auto
+
+.container
+  max-width: 1280px
+  margin: 0 auto
+  @media (max-width: 1330px)
+    padding: 0 15px
