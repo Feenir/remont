@@ -122,6 +122,9 @@ img {
   line-height: 30px; }
   .about__text--space {
     margin: 20px 0; }
+.about__photo {
+  object-fit: cover;
+  height: 100%; }
 
 .service__wrapper {
   display: flex;
