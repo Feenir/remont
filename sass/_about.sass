@@ -3,15 +3,20 @@
     display: flex
     align-items: stretch
     justify-content: space-between
-    gap: 40px
-    margin-top: 98px
+    gap: 60px
+    margin-top: 120px
     margin-bottom: $mb
   &__group
     max-height: 630px
     width: calc(50% - 20px)
+    &--img
+      max-width: 410px
+    &--text
+      flex: 1
   &__title
-    font-size: 24px
-    margin-bottom: 50px
+    font-size: 36px
+    margin-bottom: 30px
+    font-weight: 400
   &__text
     font-size: 16px
     line-height: 30px
@@ -19,5 +24,6 @@
       margin: 20px 0
 
   &__photo
-    object-fit: cover
     height: 100%
+    object-fit: cover
+    max-height: 590px

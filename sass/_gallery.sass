@@ -1,14 +1,30 @@
 .gallery
   &--gallery-page
     padding-top: 203px
+    @media (max-width: 1024px)
+      padding-top: 100px
+    @media (max-width: 560px)
+      padding-top: 60px
   &__wrapper
     display: flex
-    align-items: flex-start
-    gap: 42px
+    align-items: stretch
+    justify-content: center
+    gap: 40px
     flex-wrap: wrap
     margin-bottom: $mb
+    @media (max-width: 768px)
+      align-items: flex-start
+      gap: 20px
+    @media (max-width: 560px)
+      flex-direction: column
   &__img-wrapper
+    display: flex
     width: calc(50% - 21px)
+    @media (max-width: 768px)
+      width: calc(50% - 10px)
+      gap: 10px
+    @media (max-width: 560px)
+      width: 100%
 
   &__img-link
     display: flex
@@ -17,7 +33,22 @@
 
   &__text
     color: #646464
-    font-size: 26px
+    font-size: 16px
+    font-weight: 400
 
   &__img
     max-width: 100%
+
+  &__button
+    display: flex
+    align-items: center
+    justify-content: center
+    font-size: 16px
+    margin-top: 65px
+    background-color: white
+    border: 1px solid #646464
+    width: 100%
+    max-width: 255px
+    min-height: 55px
+    text-transform: uppercase
+    color: #646464

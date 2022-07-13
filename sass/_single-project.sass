@@ -1,4 +1,4 @@
-$margin-single: 30px
+$margin-single: 40px
 
 .single-project
   &__wrapper
@@ -15,7 +15,12 @@ $margin-single: 30px
       width: 100%
       margin-bottom: $margin-single
     &--double
-      width: calc(50% - 15px)
+      width: calc(50% - 20px)
+
+  &__wrapper-title
+    position: absolute
+    padding-left: max(15px, calc((100% - 1280px)/2))
+    bottom: 10%
   &__photo
     display: flex
     max-width: 100%
@@ -23,19 +28,64 @@ $margin-single: 30px
       height: 70vh
       width: 100%
   &__title
-    position: absolute
-    padding-left: max(15px, calc((100% - 1280px)/2))
     color: white
-    bottom: 90px
     font-size: 36px
 
-  &__project-title
-    font-size: 28px
-    margin-top: 60px
-    margin-bottom: 20px
+  &__text
+    color: white
+    font-size: 24px
+    font-family: 'Vaccine', sans-serif
+    font-weight: 400
 
-  &__discript
-    margin-bottom: 90px
-  &__disript__item
+  &__project-title
+    font-size: 20px
+    &--long
+      max-width: 190px
+
+  &__describe
+    text-transform: uppercase
+    letter-spacing: 0.3em
+    font-family: "helvetic", sans-serif
+    line-height: 30px
+    &--color
+      color: #858585
+    &--long
+      max-width: 320px
+    &--space
+      margin-bottom: 35px
+
+
+  &__about
+    display: flex
+    justify-content: space-between
+    margin: 80px 0
+
+
+  &__about-box
+    display: flex
+    gap: 50px
+
+  &__box-item
+    display: flex
+    flex-direction: column
+    font-size: 14px
+    font-weight: 400
+
+  &__second-describe
+    display: flex
+    flex-direction: column
+    margin: 40px 0
+
+  &__second-title
+    text-transform: uppercase
+    font-size: 34px
+    letter-spacing: 0.3em
+    margin-bottom: 30px
+
+  &__second-text
+    font-size: 16px
+    letter-spacing: 0.3em
+    line-height: 30px
     &:not(:last-child)
-      padding-bottom: 5px
+      margin-bottom: 20px
+

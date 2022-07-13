@@ -2,13 +2,36 @@
   &__slider
     position: relative
     margin-bottom: $mb
-  &__title
+  &__title-wrapper
     position: absolute
+    padding-left: max(15px, calc((100% - 1280px)/2))
+    bottom: 10%
+  &__title
     color: white
     font-size: 36px
     line-height: 73px
-    bottom: 103px
-    left: 339px
+    font-weight: 400
+    @media (max-width: 1024px)
+      font-size: 30px
+      line-height: 1.2
+    @media (max-width: 560px)
+      font-size: 24px
+      line-height: 1
+
+  &__address
+    color: white
+    font-size: 24px
+    line-height: 73px
+    font-family: 'Vaccine', sans-serif
+    @media (max-width: 1024px)
+      font-size: 20px
+      line-height: 1.2
+    @media (max-width: 560px)
+      font-size: 18px
+      line-height: 1
+
 
   &__slide
-    height: 70vh
+    height: 740px
+    @media (max-width: 1024px)
+      height: 50vh

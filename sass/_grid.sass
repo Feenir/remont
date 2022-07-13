@@ -5,6 +5,7 @@ $mb: 134px
   padding: 0
   margin: 0
 html,body
+  box-sizing: border-box
   height: 100%
 
 .wrapper
@@ -13,11 +14,14 @@ html,body
   flex-direction: column
 
 body
-  font-family: "Vaccine"
-  font-weight: 500
+  font-family: "RFDewi", sans-serif
+  font-weight: 400
   box-sizing: border-box
-  letter-spacing: 0.3em
   background-color: #F5F5F5
+
+p, li, a
+  font-family: "RFDewi", sans-serif
+  font-weight: 300
 
 .body
   &--color
@@ -34,11 +38,31 @@ a
   text-decoration: none
 
 img
+  object-fit: cover
   min-width: 100%
-  height: auto
+  height: 100%
 
 .container
   max-width: 1280px
   margin: 0 auto
   @media (max-width: 1330px)
     padding: 0 15px
+
+.swiper-pagination-bullet
+  width: 54px
+  height: 2px
+  border-radius: unset!important
+  background-color: white
+  opacity: unset!important
+
+.swiper-pagination-bullet-active
+  background-color: #646464
+  opacity: unset!important
+
+.hero-pagination
+  position: relative
+  display: flex
+  align-items: center
+  justify-content: center
+  z-index: 100
+  bottom: 30px !important
